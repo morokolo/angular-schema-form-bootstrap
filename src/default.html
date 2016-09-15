@@ -1,7 +1,7 @@
 <div class="form-group {{form.htmlClass}}"
      ng-class="{ '{{'schema-form-' + form.type}}': true, 'has-error': form.disableErrorState !== true && hasError(), 'has-success': form.disableSuccessState !== true && hasSuccess(), 'has-feedback': form.feedback !== false }">
   <label class="control-label {{form.labelHtmlClass}}" ng-class="{'sr-only': !showTitle()}" for="{{form.key.slice(-1)[0]}}">{{form.title}}</label>
-<p>Description here</p>
+  <p class="control-label {{form.labelHtmlClass}}">Description here</p>
   <input ng-if="!form.fieldAddonLeft && !form.fieldAddonRight"
          ng-show="form.key"
          type="{{form.type}}"
